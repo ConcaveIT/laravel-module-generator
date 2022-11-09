@@ -1,0 +1,23 @@
+{
+    "name": "concaveit/media",
+    "description": "A simple package for laravel media gallery for admin panel",
+    "autoload": {
+        "psr-4": {
+            "Concaveit\\Media\\": "src/"
+        }
+    },
+    "require": {
+        "intervention/image": "^2.7"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Concaveit\\Media\\MediaServiceProvider",
+                "Intervention\\Image\\ImageServiceProvider"
+            ],
+            "aliases": {
+                "Image": "Intervention\\Image\\Facades\\Image"
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "name": "concaveit/modulegenerator",
+    "description": "A simple package for laravel module generator laravel for admin panel",
+    "autoload": {
+        "psr-4": {
+            "Concaveit\\Modulegenerator\\": "src/"
+        }
+    },
+    "require": {
+		"concaveit/media": "@dev",
+        "spatie/laravel-activitylog": "^3.17",
+        "spatie/laravel-permission": "^5.5"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Concaveit\\Media\\MediaServiceProvider",
+                "Intervention\\Image\\ImageServiceProvider"
+            ],
+            "aliases": {
+                "Image": "Intervention\\Image\\Facades\\Image"
+            }
+        }
+    }
+}
