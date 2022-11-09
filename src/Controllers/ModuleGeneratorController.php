@@ -3,7 +3,7 @@
 namespace Concaveit\ModuleGenerator\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Concaveit\ModuleGenerator\Models\ModuleGenerator;
+use Concaveit\Modulegenerator\ModuleGenerator;
 use Illuminate\Support\Facades\File;
 use Spatie\Permission\Models\Permission;
 use Spatie\Permission\Models\Role;
@@ -353,7 +353,7 @@ class ModuleGeneratorController extends Controller
     }
 
     public function createMigration(){
-        return view('core.module.create-migration'); 
+        return view('concaveit_modulegenerator::core.module.create-migration'); 
     }
 
 

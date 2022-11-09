@@ -3,7 +3,8 @@
     "description": "A simple package for laravel module generator laravel for admin panel",
     "autoload": {
         "psr-4": {
-            "Concaveit\\Modulegenerator\\": "src/"
+            "Concaveit\\Modulegenerator\\": "src/",
+            "Concaveit\\Modulegenerator\\": "models/"
         }
     },
     "require": {
