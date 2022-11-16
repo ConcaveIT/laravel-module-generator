@@ -15,7 +15,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Concaveit\\Modulegenerator\\ModulegeneratorServiceProvider"
+                "concaveit\\modulegenerator\\ModulegeneratorServiceProvider"
             ],
             "aliases": {
                 "Image": "Intervention\\Image\\Facades\\Image"
